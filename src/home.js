@@ -10,8 +10,10 @@ const Home = () => {
       {error && (<div>
       		<h3 style={{color: 'red'}}>Error, Please try again..</h3>
       	</div>)}
-      {status && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} title="All Blogs"/>}
+      {status && (<div>
+      		<h3 style={{color: 'green'}}>Loading, please wait...</h3>
+      	</div>)}
+      {blogs && (<BlogList blogs={blogs} title="All Blogs"/>)}
     </div>
   );
 }
