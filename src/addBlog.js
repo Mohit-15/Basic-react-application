@@ -47,8 +47,10 @@ const AddBlog = () => {
 		          value={author}
 		          onChange={(e) => setAuthor(e.target.value)}
 		        >
-		          <option value="mario">mario</option>
-		          <option value="yoshi">yoshi</option>
+		          <option value="shubh">Shubh</option>
+		          <option value="singh">Singh</option>
+		          <option value="raj">Raj</option>
+		          <option value="rajat">Rajat</option>
 		        </select>
 		        {!upload && <button>Add Blog</button>}
 		        {upload && <button disabled>Uploading</button>}
