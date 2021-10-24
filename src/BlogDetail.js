@@ -16,8 +16,12 @@ const BlogDetail = () => {
 	
 	return (
 		<div className="blog-details">
-		  {error && <div>error...</div>}
-	      {status && <div>Loading...</div>}
+		  {error && (<div>
+      	  <h3 style={{color: 'red'}}>Error, Please try again..</h3>
+	      	</div>)}
+	      {status && (<div>
+	      		<h3 style={{color: 'green'}}>Loading, please wait...</h3>
+	      	</div>)}
 	      {blog && (
 	      	<article>
 	      		<center>
